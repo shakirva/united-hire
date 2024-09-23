@@ -25,169 +25,96 @@
             <link rel="icon" type="image/png" href="assets/image/fav/favicon-16x16.png" sizes="16x16">
       
    </head>
+
+   <style>
+       .map-section {
+            margin: 20px 0; /* Adjusts spacing around the map section */
+        }
+        .map-outer {
+            overflow: hidden; /* Ensures that no overflow occurs */
+        }
+
+   </style>
    <body class="sbar_color_one">
 
          <!--Start Preloader -->
-     <div class="preloader"></div>
-     <!--End Preloader --> 
-
-      <div class="page-wapper contact-us">
-         <header class="site-header" id="header-one">
-            <div class="top-bar">
-               <div class="container">
-                  <div  class="row clearfix">
-                     <div class="col-lg-12">
-                        <div class="float-left">
-                           <p><i class="fa fa-map-marker"></i> 7088 Micaela Cliffs, Thielshire, OK 95062</p>
-                        </div>
-                        <div class="float-right ">
-                           <div class="inner-sec">
-                              <ul class="social-media">
-                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                 <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                                 <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
-                                 <li><a href="#"><i class="fa fa-share-alt"></i></a></li>
-                              </ul>
-                              <div class="dropdown language-drp">
-                                <button type="button" class=" btn-primary dropdown-toggle" data-toggle="dropdown">
-                                  <img src="assets/image/language-1.jpg" alt="lan"> Eng
-                                </button>
-                                <div class="dropdown-menu">
+         <div class="preloader"></div>
+         <!--End Preloader --> 
+      
+            
+                  <div class="navbar navbar-expand-lg bsnav bsnav-sticky bsnav-sticky-slide">
+                     <div class="container">
+                        <a class="navbar-brand" href="index.html"><img src="assets/image/logo-new.png" class="img-fluid " style="width:70px;" alt="img"></a>
+                        <button class="navbar-toggler toggler-spring"><span class="navbar-toggler-icon"></span></button>
+                        <div class="collapse navbar-collapse">
+                           <ul class="navbar-nav navbar-mobile ml-auto mr-auto">
+                                 <li class="nav-item  activee">
+                                       <a class="nav-link link_hd" href="index.html">  Home  </a>
+                                       <ul class="navbar-nav submenu">
+                                             <!-- <li class="nav-item"><a class="nav-link" href="index.html">Home-1</a></li>
+                                          <li class="nav-item"><a class="nav-link" href="index-2.html">Home-2</a></li>
+                                          <li class="nav-item"><a class="nav-link" href="index-3.html">Home-3</a></li>
+                                          <li class="nav-item"><a class="nav-link" href="index-4.html">Home-4</a></li>
+                                          <li class="nav-item"><a class="nav-link" href="index-5.html">Home-5</a></li> -->
+                                       
+                                       </ul>
+                                    </li>
+                              
+                                    <li class="nav-item dropdown">
+                                     <a class="nav-link dropdown-toggle" href="services-for-talent.html" id="servicesDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                         Services
+                                     </a>
+                                     <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                                         <!-- Department grid 3 column with 4 submenus -->
+                                         <li class="dropdown-submenu">
+                                             <a class="dropdown-item" href="services-for-talent.html">Service for Talents </a>
+                                             <ul class="dropdown-menu">
+                                                 <li><a class="dropdown-item" href="Ausbildung.html">Ausbildung </a></li>
+                                                 <li><a class="dropdown-item" href="jobs-in-jermany.html">Jobs in Germany </a></li>
+                                                 <li><a class="dropdown-item" href="fedral.html">Federal Voluntary Services </a></li>
+                                                 <li><a class="dropdown-item" href="united.html">United Hire Membership</a></li>
+                                             </ul>
+                                         </li>
+                                         <!-- Department grid 4 column with 2 submenus -->
+                                         <li class="dropdown-submenu">
+                                             <a class="dropdown-item" href="services-for-employers.html">Service for Employers</a>
+                                         </li>
+                                     </ul>
+                                 </li>
                                  
-                                  <a class="dropdown-item" href="#"><img src="assets/image/language-2.jpg" alt="lan"> FRA</a>
-                                  <a class="dropdown-item" href="#"><img src="assets/image/language-1.jpg" alt="lan">GRE</a>
-                                </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="navbar navbar-expand-lg bsnav bsnav-sticky bsnav-sticky-slide">
-                  <div class="container">
-                     <a class="navbar-brand" href="index.html"><img src="assets/image/default-logo.png" class="img-fluid" alt="img"></a>
-                     <button class="navbar-toggler toggler-spring"><span class="navbar-toggler-icon"></span></button>
-                     <div class="collapse navbar-collapse">
-                        <ul class="navbar-nav navbar-mobile ml-auto mr-auto">
-                              <li class="nav-item dropdown">
-                                    <a class="nav-link link_hd" href="#">  Home  </a>
-                                    <ul class="navbar-nav submenu">
-                                          <li class="nav-item"><a class="nav-link" href="index.html">Home-1</a></li>
-                                       <li class="nav-item"><a class="nav-link" href="index-2.html">Home-2</a></li>
-                                       <li class="nav-item"><a class="nav-link" href="index-3.html">Home-3</a></li>
-                                       <li class="nav-item"><a class="nav-link" href="index-4.html">Home-4</a></li>
-                                       <li class="nav-item"><a class="nav-link" href="index-5.html">Home-5</a></li>
                                   
-                                    </ul>
-                                 </li>
-                           
-                           <li class="nav-item dropdown">
-                                 <a class="nav-link link_hd" href="#">  Departments </a>
+                              <li class="nav-item ">
+                                 <a class="nav-link link_hd" href="why-germany.html"> Why Germany  </a>
                                  <ul class="navbar-nav submenu">
-                                    <li class="nav-item"><a class="nav-link" href="department-grid-3-column.html">Department grid 3 column</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="department-grid-4-column.html">Department grid 4 column</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="department-listing.html">Department listing</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="department-with-icon.html">Department with icons</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="department-with-sidebar.html">Single department with sidebar</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="department-with-no-sidebar.html">Single department no sidebar</a></li>
+                                  
                                  </ul>
                               </li>
-                           <li class="nav-item dropdown activee">
-                              <a class="nav-link link_hd" href="#">  Pages  </a>
-                              <ul class="navbar-nav submenu">
-                                 <li class="nav-item"><a class="nav-link" href="case-grid.html">Case gird</a></li>
-                                 <li class="nav-item"><a class="nav-link" href="case-masonry.html">Case masonry</a></li>
-                                 <li class="nav-item"><a class="nav-link" href="care-listing.html">Care listing</a></li>
-                                 <li class="nav-item"><a class="nav-link" href="single-case.html">Single case</a></li>
-                                 <li class="nav-item"><a class="nav-link" href="aboutus.html">About us</a></li>
-                                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact us</a></li>
-                                 <li class="nav-item"><a class="nav-link" href="our-doctors.html">Our doctors</a></li>
-                                 <li class="nav-item"><a class="nav-link" href="single-doctors.html">Single doctor</a></li>
-                                 <li class="nav-item"><a class="nav-link" href="book-an-appoinment.html">Book an appointment</a></li>
-                                 <li class="nav-item"><a class="nav-link" href="time-table.html">Timetable</a></li>
-                                 <li class="nav-item"><a class="nav-link" href="faqs.html">FAQs</a></li>
-                              </ul>
-                           </li>
-                           <li class="nav-item dropdown">
-                                 <a class="nav-link link_hd" href="#">  Blog  </a>
-                                 <ul class="navbar-nav submenu">
-                                    <li class="nav-item"><a class="nav-link" href="blog-grid.html">Blog grid</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="blog-with-sidebar.html">Blog with sidebar</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="blog-single-post.html">Single post</a></li>
-                                 </ul>
-                              </li>
-                              <li class="nav-item dropdown">
-                                    <a class="nav-link link_hd" href="#">  Shop  </a>
+ 
+                              <li class="nav-item ">
+                               <a class="nav-link link_hd" href="contact.html">  Contact Us  </a>
+                               <ul class="navbar-nav submenu">
+                                
+                               </ul>
+                            </li>
+                              <li class="nav-item ">
+                              
                                     <ul class="navbar-nav submenu">
-                                          <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
-                                          <li class="nav-item"><a class="nav-link" href="product-details.html">Product detail</a></li>
-                                          <li class="nav-item"><a class="nav-link" href="shop-cart.html">Cart</a></li>
-                                          <li class="nav-item"><a class="nav-link" href="checkout.html">Checkout</a></li>
+                                       <!-- <li class="nav-item"><a class="nav-link" href="blog-grid.html">Blog grid</a></li>
+                                       <li class="nav-item"><a class="nav-link" href="blog-with-sidebar.html">Blog with sidebar</a></li>
+                                       <li class="nav-item"><a class="nav-link" href="blog-single-post.html">Single post</a></li> -->
                                     </ul>
                                  </li>
+                               
+                           </ul>
+                         
+                                       </li> 
+                           </ul>
                           
-                        </ul>
-                        <ul class="navbar-nav navbar-mobile right-nav ml-auto ">
-                              <li class="nav-item dropdown">
-                                    <a class="nav-link" href="#"> <span class="flaticon-search head-icon"></span>   </a>
-                                    <ul class="navbar-nav submenu">
-                                       <li>  <form>
-                                          <div class="form-group">
-                                             <input name="search" type="text" placeholder="Enter a Keywords">
-                                             <button type="submit" class="theme-btn">GO</button>
-                                          </div>
-                                       </form></li> 
-                                    </ul>
-                                 </li> 
-                                 
-                                    <!----cart----->
-                              <li class="nav-item  dropdown cart_dropdown">
-                                    <a class="nav-link" href="#"> <span class="flaticon-supermarket head-icon"></span>   </a>
-                                    <ul class="navbar-nav submenu">
-                                       <li>  <div  class="cart" id="cart_items">
-                                        <div class="product_inside_cart">
-
-                                        <div class="cart_in">
-                                           <img src="assets/image/shop/view-product-1.jpg" class="img-fluid" width="50" alt="proimg" />
-                                           <div class="content">
-                                              <h2>Lucien Rectangle</h2>
-                                              <p>$25.00</p>
-                                           </div>
-                                           <div class="close">
-                                              <span class="flaticon-close  sme"></span>
-                                           </div>
-                                        </div>
-                                        <div class="cart_in">
-                                             <img src="assets/image/shop/view-product-1.jpg" class="img-fluid" width="50" alt="proimg" />
-                                             <div class="content">
-                                                <h2>Lucien Rectangle</h2>
-                                                <p>$25.00</p>
-                                             </div>
-                                             <div class="close">
-                                                <span class="flaticon-close  sme"></span>
-                                             </div>
-                                          </div>
-
-                                       </div>
-
-
-                                        <div class="cart_btns_ clearfix">
-                                           <button class="theme-btn float-left">Checkout</button>
-                                           <button class="theme-btn float-right">Add to cart</button>
-                                        </div>
-
-                                     </div></li> 
-                                    </ul>
-                                 </li> 
-                                   <!----cart-----> 
-                        </ul>
+                        </div>
                      </div>
                   </div>
-               </div>
-            <!--End Main Header -->
-         </header>
+                  <!--End Main Header -->
+               </header>
          <!------main-content------>
          <main class="main-content">
           
@@ -212,24 +139,6 @@
 
 <!-----------------breadcrumb------------------------>
 
-          <section class="map-section">
-               <!--Map Outer-->
-               <div class="map-outer">
-                  <div class="google-map"
-                     id="contact-google-map" 
-                     data-map-lat="44.231172" 
-                     data-map-lng="-76.485954" 
-                     data-icon-path="assets/image/icons/map-marker.png" 
-                     data-map-title="Alabama, USA" 
-                     data-map-zoom="12" 
-                     data-markers='{
-                     "marker-1": [42.231172, -84.485954, "<h4>Branch Office</h4><p>4/99 Alabama, USA</p>"],
-                     "marker-2": [44.231172, -76.485954, "<h4>Branch Office</h4><p>4/99 Alabama, USA</p>"],
-                     "marker-3": [40.880550, -78.393705, "<h4>Branch Office</h4><p>4/99 Pennsylvania, USA</p>"]
-                     }'>
-                  </div>
-            </div>
-          </section>
            
 <!-------------map--------------->
 
@@ -243,87 +152,98 @@
          <div class="col-lg-4 col-md-4 col-sm-12">
             <div class="contact_address_inner">
                <div class="contact_our_office">
-                  <h2>Our <span>Office</span></h2>
-                  <p>7088 Micaela Cliffs, Thielshire, <br/> 
-                     OK 95062</p>
+                  <h2>We are here for you</h2>
+                  <h2>United Hire - <span>Germany</span></h2>
+                  <p>Ludwig Straße 17<br/>
+                     65479 Raunheim, Deutschland</p>
+                  <p>Telefon: 06142 - 2106636<br/>
+                     E-Mail: <a href="mailto:info@unitedhire.de">info@unitedhire.de</a></p>
                </div>
                <div class="contact_get_in_touch">
-                  <h2>Get in <span>Touch</span></h2>
-                  <div class="mail">
-                  <p>EMAIL<br/>
-                  <a href="mailto:contact@meditex.com">contact@meditex.com</a></p>
+                  <h2>United Hire - <span>India</span></h2>
+                  <p>511, Paras Trinity, Sector 63,<br/>
+                     Gurugram, Haryana, India</p>
+                  <p>Telefon: +91 7406672444<br/>
+                     E-Mail: <a href="mailto:info@unitedhire.de">info@unitedhire.de</a></p>
                </div>
-                  <div class="phone">
-                     <p>Phone number<br/>
-                        <a href="#" class="phne">(052) 611-5711</a> </p>
-                  </div>
-               </div>
-               <div class="contact_social_media">
-                  <ul>
-                     <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                     <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                     <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
-                     <li><a href="#"><i class="fa fa-wifi"></i></a></li>
-                  </ul>
+               <div class="contact_opening_hours">
+                  <h2>Opening hours:</h2>
+                  <p>Monday – Friday: 9:00 –13:00 h</p>
                </div>
             </div>
          </div>
          <div class="col-lg-8 col-md-8 col-sm-12">
             <div class="contact_pg_form">
-                  <form id="contact-form" method="post" action="contact.php" role="form">
-
-                        <div class="messages"></div>
-    
-                        <div class="controls">
-    
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                               
-                                        <input id="form_name" type="text" name="name"  placeholder="Name *" required="required" data-error="NameFirstname is required.">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                
-                           
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        
-                                        <input id="form_email" type="email" name="email"  placeholder=" Email *" required="required" data-error=" Email is required.">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                     
-                                        <input id="form_phone" type="text" name="phone"  placeholder="Phone *" required="required" data-error="Phone is required.">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                
-                           
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                       
-                                        <textarea id="form_message" name="message"  placeholder="Message " rows="6" required="required" data-error="Please, leave us a message."></textarea>
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <input type="submit" class="theme-btn btn-send" value="Send message">
-                                </div>
-                            </div>
-                          
+               <form id="contact-form" method="post" action="contact.php" role="form" enctype="multipart/form-data">
+                  <div class="messages"></div>
+                  <div class="controls">
+                     <div class="row">
+                        <div class="col-md-6">
+                           <div class="form-group">
+                              <input id="form_name" type="text" name="name" placeholder="Name *" required="required" data-error="Name is required.">
+                              <div class="help-block with-errors"></div>
+                           </div>
                         </div>
-    
-                    </form>
-
+                        <div class="col-md-6">
+                           <div class="form-group">
+                              <input id="form_email" type="email" name="email" placeholder="Email *" required="required" data-error="Email is required.">
+                              <div class="help-block with-errors"></div>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="form-group">
+                              <input id="form_subject" type="text" name="subject" placeholder="Subject *" required="required" data-error="Subject is required.">
+                              <div class="help-block with-errors"></div>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="form-group">
+                              <input id="form_phone" type="text" name="phone" placeholder="Phone number *" required="required" data-error="Phone number is required.">
+                              <div class="help-block with-errors"></div>
+                           </div>
+                        </div>
+                        <div class="col-md-12">
+                           <div class="form-group">
+                              <label for="form_cv">Upload CV:</label>
+                              <input id="form_cv" type="file" name="cv" required="required" data-error="Please upload your CV.">
+                              <div class="help-block with-errors"></div>
+                           </div>
+                        </div>
+                        <div class="col-md-12">
+                           <div class="form-group">
+                              <textarea id="form_message" name="message" placeholder="Message" rows="6" required="required" data-error="Please leave us a message."></textarea>
+                              <div class="help-block with-errors"></div>
+                           </div>
+                        </div>
+                        <div class="col-md-12">
+                           <div class="form-group">
+                              <input id="form_consent" type="checkbox" name="consent" required="required" data-error="Consent is required.">
+                              <label for="form_consent">I agree to the terms and conditions *</label>
+                              <div class="help-block with-errors"></div>
+                           </div>
+                        </div>
+                        <div class="col-md-12">
+                           <input type="submit" class="theme-btn btn-send" value="Send message">
+                        </div>
+                     </div>
+                  </div>
+               </form>
             </div>
          </div>
       </div>
    </div>
 </div>
-<!------------contact_address--------------->
+
+
+<section class="map-section">
+   <!-- Map Outer -->
+   <div class="map-outer">
+      <div class="google-map" id="contact-google-map">
+         <!-- Google Maps iframe -->
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3509.5951032772828!2d77.08914462494823!3d28.401294894544833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d223b06543d41%3A0x13605e6ad66428d9!2sParas%20Trinity!5e0!3m2!1sen!2sin!4v1727131787942!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+   </div>
+</section>
 
 	
 <!-------contact-through----->
@@ -503,6 +423,46 @@
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHzPSV2jshbjI8fqnC_C4L08ffnj5EN3A"></script>
       <script src="assets/js/gmaps.js"></script>
       <script src="assets/js/map-script.js"></script>
-      <!--End Google Map APi-->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ 
+
+      <script>
+         function initMap() {
+            const mapElement = document.getElementById('contact-google-map');
+            const mapLat = parseFloat(mapElement.getAttribute('data-map-lat'));
+            const mapLng = parseFloat(mapElement.getAttribute('data-map-lng'));
+            const mapZoom = parseInt(mapElement.getAttribute('data-map-zoom'));
+            const markersData = JSON.parse(mapElement.getAttribute('data-markers'));
+            
+            const map = new google.maps.Map(mapElement, {
+               zoom: mapZoom,
+               center: { lat: mapLat, lng: mapLng }
+            });
+      
+            for (const key in markersData) {
+               const markerInfo = markersData[key];
+               const marker = new google.maps.Marker({
+                  position: { lat: markerInfo[0], lng: markerInfo[1] },
+                  map: map,
+                  title: mapElement.getAttribute('data-map-title'),
+                  icon: mapElement.getAttribute('data-icon-path')
+               });
+      
+               const infowindow = new google.maps.InfoWindow({
+                  content: markerInfo[2]
+               });
+      
+               marker.addListener('click', () => {
+                  infowindow.open(map, marker);
+               });
+            }
+         }
+      
+         // Initialize the map when the page loads
+         window.onload = initMap;
+      </script>
+
    </body>
 </html>
