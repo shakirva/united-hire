@@ -3653,8 +3653,8 @@ textarea {
 .why_choose_us {
 	position: relative;
 	background: transparent;
-	margin-top: -110px;
-	z-index: 100;
+	margin-top: 80px;
+	z-index: ;
 	padding-bottom: 50px;
 }
 
@@ -3665,6 +3665,9 @@ textarea {
 	background: #fff;
 	border-radius: 3px;
 	border-top: 3px solid #e94a3a;
+
+	border-bottom: 3px solid #e94a3a;
+	box-shadow: 0px 45px 68px -31px rgba(0, 0, 0, .1);
 	text-align: center;
 }
 
