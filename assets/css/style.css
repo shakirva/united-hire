@@ -3246,7 +3246,7 @@ textarea {
 }
 
 .department_inner .department_icon_content:hover h2 {
-	color: #fca91c;
+	color: #4e3f79;
 }
 
 
@@ -3920,7 +3920,7 @@ textarea {
 }
 
 .welcm_sec .welcm_sec_content.lft {
-	background: url(../image/welcome/hm-2-welcome.jpg);
+	background: url(assets/image/main.jpg);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -4484,7 +4484,7 @@ textarea {
 
 .footer.type_two .footer-widget.first ul li:hover a {
 	background: #fff;
-	color: #13bfb3;
+	color: #fca91c;
 }
 
 .footer.type_two .footer-widget .form-group input[type="email"] {
@@ -7342,7 +7342,7 @@ textarea {
 }
 
 .department_listing .heading h1 span {
-	color: #fca91c;
+	color: #f05322;
 	font-weight: 800;
 }
 
@@ -7405,18 +7405,18 @@ textarea {
 	position: absolute;
 	bottom: 70px;
 	font-size: 14px;
-	color: #2b2b2b;
+	color: #fca91c;
 	line-height: 23px;
 	text-transform: uppercase;
 	font-weight: 700;
 }
 
 .department_listing .department_list_inner:hover .li_dp_content h2 a {
-	color: #568701;
+	color: #fca91c;
 }
 
 .department_listing .department_list_inner:hover .li_dp_content a.read_ {
-	color: #568701;
+	color: #fca91c;
 	text-decoration: underline;
 }
 
