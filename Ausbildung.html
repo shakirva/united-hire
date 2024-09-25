@@ -36,45 +36,48 @@
                    color: #35253b; /* Custom dot icon color */
                }
 
-               .dropdown-menu {
-   display: none;  /* Default hidden */
+               .nav-item.dropdown:hover > .dropdown-menu {
+  display: block;
 }
 
-.dropdown-toggle:focus + .dropdown-menu,
-.dropdown-toggle:active + .dropdown-menu,
-.dropdown-menu.show {
-   display: block; /* Show dropdown when clicked */
+/* Hover behavior for nested submenus */
+.dropdown-submenu:hover > .dropdown-menu {
+  display: block;
 }
 
-/* For the submenus */
+/* Hide nested submenu by default */
+.dropdown-menu .dropdown-menu {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+}
+
+/* Ensure proper styling for nested dropdowns */
 .dropdown-submenu {
-   position: relative;
+  position: relative;
 }
 
-.dropdown-submenu .dropdown-menu {
-   display: none;  /* Hide submenus by default */
-   position: absolute;
-   left: 100%;  /* Position submenu to the right */
-   top: 0;
-   margin-top: -1px;
+/* Show right arrow only for Services for Talents */
+.dropdown-submenu .dropdown-item::after {
+  content: ">";
+  float: right;
 }
 
-/* Reveal submenu on hover */
-.dropdown-submenu:hover .dropdown-menu {
-   display: block;
+.dropdown-submenu:hover > .dropdown-menu {
+  display: block;
 }
 
-
-/* Make the dropdown show on hover */
-.nav-item.dropdown:hover .dropdown-menu {
-    display: block;
+/* Remove right arrow from non-nested items (e.g., Services for Employers) */
+.dropdown-menu > li:not(.dropdown-submenu) .dropdown-item::after {
+  content: none;
 }
 
-/* Make sure submenus display on hover */
-.dropdown-submenu:hover .dropdown-menu {
-    display: block;
-    left: 100%; /* Position the submenu to the right of the parent */
-    top: 0;
+/* Navbar styling for alignment */
+.navbar-brand {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 
@@ -86,79 +89,131 @@
         <!--End Preloader --> 
      
            
-                 <div class="navbar navbar-expand-lg bsnav bsnav-sticky bsnav-sticky-slide">
-                    <div class="container">
-                       <a class="navbar-brand" href="index.html"><img src="assets/image/logo-new.png class="img-fluid " style="width:70px;" alt="img"></a>
-                       <button class="navbar-toggler toggler-spring"><span class="navbar-toggler-icon"></span></button>
-                       <div class="collapse navbar-collapse">
-                          <ul class="navbar-nav navbar-mobile ml-auto mr-auto">
-                                <li class="nav-item  activee">
-                                      <a class="nav-link link_hd" href="index.html">  Home  </a>
-                                      <ul class="navbar-nav submenu">
-                                            <!-- <li class="nav-item"><a class="nav-link" href="index.html">Home-1</a></li>
-                                         <li class="nav-item"><a class="nav-link" href="index-2.html">Home-2</a></li>
-                                         <li class="nav-item"><a class="nav-link" href="index-3.html">Home-3</a></li>
-                                         <li class="nav-item"><a class="nav-link" href="index-4.html">Home-4</a></li>
-                                         <li class="nav-item"><a class="nav-link" href="index-5.html">Home-5</a></li> -->
-                                      
-                                      </ul>
-                                   </li>
-                             
-                                   <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="services-for-talent.html" id="servicesDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Services
-                                    </a>
-                                    <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
-                                        <!-- Department grid 3 column with 4 submenus -->
-                                        <li class="dropdown-submenu">
-                                            <a class="dropdown-item" href="services-for-talent.html">Service for Talents </a>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="Ausbildung.html">Ausbildung </a></li>
-                                                <li><a class="dropdown-item" href="jobs-in-jermany.html">Jobs in Germany </a></li>
-                                                <li><a class="dropdown-item" href="fedral.html">Federal Voluntary Services </a></li>
-                                                <li><a class="dropdown-item" href="united.html">United Hire Membership</a></li>
-                                            </ul>
-                                        </li>
-                                        <!-- Department grid 4 column with 2 submenus -->
-                                        <li class="dropdown-submenu">
-                                            <a class="dropdown-item" href="services-for-employers.html">Service for Employers</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                
-                                 
-                             <li class="nav-item ">
-                                <a class="nav-link link_hd" href="why-germany.html"> Why Germany  </a>
-                                <ul class="navbar-nav submenu">
-                                 
-                                </ul>
-                             </li>
+        <div class="navbar navbar-expand-lg bsnav bsnav-sticky bsnav-sticky-slide d-none d-lg-block">
+         <div class="container">
+           <!-- Navbar Items Aligned to Left -->
+           <div class="collapse navbar-collapse">
+             <ul class="navbar-nav " style="margin-left: -190px;">
+               <li class="nav-item active">
+                 <a class="nav-link link_hd" href="index.html">Home</a>
+               </li>
+       
+               <!-- Services Dropdown -->
+               <li class="nav-item dropdown">
+                 <a class="nav-link dropdown-toggle mt-" href="services-for-talent.html" id="servicesDropdown" data-bs-toggle="dropdown" aria-expanded="false" style="margin-top: 10PX;">Services</a>
+                 <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+       
+                   <!-- First Submenu: Services for Talent (With Right Arrow) -->
+                   <li class="dropdown-submenu">
+                     <a class="dropdown-item" href="services-for-talent.html">Service for Talents</a>
+                     <ul class="dropdown-menu">
+                       <li><a class="dropdown-item" href="Ausbildung.html">Ausbildung</a></li>
+                       <li><a class="dropdown-item" href="jobs-in-jermany.html">Jobs in Germany</a></li>
+                       <li><a class="dropdown-item" href="fedral.html">Federal Voluntary Services</a></li>
+                       <li><a class="dropdown-item" href="united.html">United Hire Membership</a></li>
+                     </ul>
+                   </li>
+       
+                   <!-- Second Submenu: Services for Employers (Without Right Arrow) -->
+                   <li>
+                     <a class="dropdown-item " href="services-for-employers.html">Service for Employers</a>
+                   </li>
+                 </ul>
+               </li>
+       
+               <li class="nav-item">
+                 <a class="nav-link link_hd" href="why-germany.html">Why Germany</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link link_hd" href="contact.html">Contact Us</a>
+               </li>
+             </ul>
+       
+             <!-- Centered Logo -->
+             <a class="navbar-brand mx-auto d-flex align-items-center" href="index.html">
+               <img src="assets/image/logo-new.png" class="img-fluid" style="width:50px;" alt="Logo">
+               <span class="ml-2" style="font-size: 20px; font-weight: bold; color: #000;">UNITED HIRE</span>
+             </a>
+       
+             <!-- Language Switcher -->
+             <ul class="navbar-nav ml-auto">
+               <li class="nav-item dropdown">
+                 <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                   EN
+                   <i class="fa fa-chevron-down"></i>
+                 </a>
+                 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="languageDropdown">
+                   <li><a class="dropdown-item" href="#">GE</a></li>
+                 </ul>
+               </li>
+             </ul>
+           </div>
+         </div>
+       </div>
+       
 
-                             <li class="nav-item ">
-                              <a class="nav-link link_hd" href="contact.html">  Contact Us  </a>
-                              <ul class="navbar-nav submenu">
-                               
-                              </ul>
-                           </li>
-                             <li class="nav-item ">
-                             
-                                   <ul class="navbar-nav submenu">
-                                      <!-- <li class="nav-item"><a class="nav-link" href="blog-grid.html">Blog grid</a></li>
-                                      <li class="nav-item"><a class="nav-link" href="blog-with-sidebar.html">Blog with sidebar</a></li>
-                                      <li class="nav-item"><a class="nav-link" href="blog-single-post.html">Single post</a></li> -->
+       <div class="navbar navbar-expand-lg bsnav bsnav-sticky bsnav-sticky-slide  d-block d-md-none">
+         <div class="container">
+            <a class="navbar-brand mx-auto d-flex align-items-center" href="index.html">
+               <img src="assets/image/logo-new.png" class="img-fluid" style="width:25px;" alt="Logo">
+               <span class="ml-2" style="font-size: 20px; font-weight: bold; color: #000;">UNITED HIRE</span>
+             </a>            <button class="navbar-toggler toggler-spring"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse">
+               <ul class="navbar-nav navbar-mobile ml-auto mr-auto">
+                     <li class="nav-item  activee">
+                           <a class="nav-link link_hd" href="index.html">  Home  </a>
+                          
+                        </li>
+                  
+                        <li class="nav-item dropdown">
+                           <a class="nav-link dropdown-toggle" href="services-for-talent.html" id="servicesDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                               Services
+                           </a>
+                           <ul class="navbar-nav submenu">                             <!-- Department grid 3 column with 4 submenus -->
+                               <li class="dropdown-submenu">
+                                   <a class="dropdown-item" href="services-for-talent.html">Service for Talents </a>
+                                   <ul class="navbar-nav submenu">                                 <li><a class="dropdown-item" href="Ausbildung.html">Ausbildung </a></li>
+                                       <li><a class="dropdown-item" href="jobs-in-jermany.html">Jobs in Germany </a></li>
+                                       <li><a class="dropdown-item" href="fedral.html">Federal Voluntary Services </a></li>
+                                       <li><a class="dropdown-item" href="united.html">United Hire Membership</a></li>
                                    </ul>
-                                </li>
-                              
-                          </ul>
-                        
-                                      </li> 
-                          </ul>
-                         
-                       </div>
-                    </div>
-                 </div>
-                 <!--End Main Header -->
-              </header>
+  
+                                   
+                               </li>
+                               <!-- Department grid 4 column with 2 submenus -->
+                               <li class="dropdown-submenu">
+                                   <a class="dropdown-item" href="services-for-employers.html">Service for Employers</a>
+                               </li>
+                           </ul>
+                       </li>
+                     
+                      
+                  <li class="nav-item ">
+                     <a class="nav-link link_hd" href="why-germany.html"> Why Germany  </a>
+                    
+                  </li>
+
+                  <li class="nav-item ">
+                   <a class="nav-link link_hd" href="contact.html">  Contact Us  </a>
+                  
+                </li>
+                  <li class="nav-item ">
+                  
+                        <ul class="navbar-nav submenu">
+                           <!-- <li class="nav-item"><a class="nav-link" href="blog-grid.html">Blog grid</a></li>
+                           <li class="nav-item"><a class="nav-link" href="blog-with-sidebar.html">Blog with sidebar</a></li>
+                           <li class="nav-item"><a class="nav-link" href="blog-single-post.html">Single post</a></li> -->
+                        </ul>
+                     </li>
+                   
+               </ul>
+             
+                           </li> 
+               </ul>
+              
+            </div>
+         </div>
+      </div>
 <!------main-content------>
 <main class="main-content">
           
@@ -170,9 +225,9 @@
               <div class="col-lg-12">
                  <nav aria-label="breadcrumb">
            <ol class="breadcrumb">
-             <li class="breadcrumb-item"><a href="#">Home</a></li>
-             <li class="breadcrumb-item"><a href="#">Pages</a></li>
-             <li class="breadcrumb-item active" aria-current="page"> FAQS</li>
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Services</a></li>
+            <li class="breadcrumb-item active" aria-current="page"> Ausbildung</li>
            </ol>
      </nav>
               </div>
@@ -182,11 +237,22 @@
      </section>
      
 
-     <div>
-      
-      <p class="text-center p-5 text-white " style="background: linear-gradient(135deg, #35253b, #6a6868); ">Germany is known for its dual education system, which is typically structured as three-and-a-half-year vocational programs. It optimally combines theoretical knowledge provided by vocational schools with practical skills acquired through training in companies. These courses are offered at numerous vocational schools throughout the country and are open to international students. Remarkably, there are no tuition fees for vocational training in Germany, and students are entitled to a monthly allowance around 1,100 to 1,200 euros per month. At United Hire, we are committed to empowering aspiring nurses with the tools, resources, and support needed to excel in their AUSBILDUNG nursing courses. We support your onboarding in the new company and further assist you after your arrival in Germany. Because we understand that behind every application is a unique individual with dreams, aspirations, and potential.
-         </p>
-     </div>
+     <div class="container">
+      <div class="row">
+        <div class="col-md-6 mt-5">
+          <img src="assets/image/ausbilding .png" alt="Image description" class="img-fluid">
+        </div>
+        <div class="col-md-6">
+          <p class="text-cente p-5 mt-1" style="text-align: justify;">
+            
+Germany is known for its dual education system, which is typically structured as three-and-a-half-year vocational programs. It optimally combines theoretical knowledge provided by vocational schools with practical skills acquired through training in companies. These courses are offered at numerous vocational schools throughout the country and are open to international students. Remarkably, there are no tuition fees for vocational training in Germany, and students are entitled to a monthly allowance around 1,100 to 1,200 euros per month.
+
+At United Hire, we are committed to empowering aspiring nurses with the tools, resources, and support needed to excel in their AUSBILDUNG nursing courses. We support your onboarding in the new company and further assist you after your arrival in Germany. Because we understand that behind every application is a unique individual with dreams, aspirations, and potential. 
+
+        </div>
+      </div>
+    </div>
+    
      <!-----------------breadcrumb------------------------>
      <div class="faq_s">
          <div class="container">
@@ -327,14 +393,16 @@
                   <div class="footer-widget first">
                         <h2>AbOUT US</h2>
                         <div class="footer-text">
-                           <p><span class="fa fa-map-marker"></span>7088 Micaela Cliffs, Thielshire, USA</p>
-                           <p><span class="fa fa-phone"></span><a href="#"> (052) 611-5711</a></p>
-                           <p><span class="fa fa-envelope"></span><a href="mailto:hello@medicol.com">hello@medicol.com</a> </p>
+                           <p><span class="fa fa-map-marker"></span>United Hire - Germany, Ludwig Straße 17
+                              65479 Raunheim, Deutschland
+                              </p>
+                           <p><span class="fa fa-phone"></span><a href="#"> 06142 - 2106636</a></p>
+                           <p><span class="fa fa-envelope"></span><a href="mailto:hello@medicol.com">E-Mail: info@unitedhire.de</a> </p>
                            <ul class="social-media">
-                              <li><a href="#" target="_blank"><i class="fa fa-facebook-f"></i></a>  </li>
-                              <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a>  </li>
-                              <li><a href="#" target="_blank"><i class="fa fa-vimeo"></i></a>  </li>
-                              <li><a href="#" target="_blank"><i class="fa fa-wifi"></i></a>  </li>
+                              <li><a href="https://www.facebook.com/profile.php?id=61565387860467" target="_blank"><i class="fa fa-facebook-f"></i></a>  </li>
+                              <li><a href="https://www.instagram.com/unitedhire/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                              <li><a href="www.linkedin.com/in/united-hire-" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                              
                            </ul>
                         </div>
                      </div>
@@ -349,21 +417,24 @@
                            <div class="row">
                                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                         <ul>
-                           <li><a href="#"> Veneers</a></li>
-                           <li><a href="#"> Teeth Cleaning</a></li>
-                           <li><a href="#"> Orthodontics</a></li>
-                           <li><a href="#"> Dentures</a></li>
-                           <li><a href="#"> Tooth Extraction</a></li>
+                           <li><a href="services-for-talent.html"> Service for Talents </a></li>
+                           <li><a href="services-for-employers.html">Service for Employers</a></li>
+                           <li><a href="Ausbildung.html"> Ausbildung </a></li>
+                           <li><a href="jobs-in-jermany.html">Jobs in Germany </a></li>
+                           <li class="w-100"><a href="fedral.html"> Federal Voluntary  </a></li>
+                           <li><a href="united.html"> United  Membership </a></li>
+                         
+                           
                         </ul>
 
                      </div>
                      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                            <ul>
-                                 <li><a href="#"> About Us</a></li>
-                                 <li><a href="#">Our Services</a></li>
-                                 <li><a href="#">Contact Us </a></li>
-                                 <li><a href="#">Blog </a></li>
-                                 <li><a href="#">Appointment</a></li>
+                                 <li><a href="index.html"> Home</a></li>
+                                 <li><a href="services-for-employers.html">Services</a></li>
+                                 <li><a href="why-germany.html">Why Germany </a></li>
+                                 <li><a href="contact.html">contact Us </a></li>
+                                
                                 
                               </ul>
                         </div>
@@ -400,20 +471,18 @@
          <div class="row clearfix">
             <div class="col-lg-12">
                <div class="left">
-                  <p>© 2019 <a>Meditex.</a> All rights reserved.</p>
+                  <p>© 2024 <spanUnited Hire</span> All rights reserved. Developed by Sygmetiv Business Solutions</p>
                </div>
                <div class="right">
                   <ul>
                      <li><a href="#">Privacy Policy    </a></li>
-                     <li><a href="#"> Terms & Conditions   </a></li>
-                     <li><a href="#">  Help Center</a></li>
+                    
                   </ul>
                </div>
             </div>
          </div>
       </div>
    </div>
-
  <!--------footer-------->
 
  <!-------backtotop-------->
