@@ -165,7 +165,7 @@ font-family: 'Nunito Sans', sans-serif;
     border-left-color: #fff;
     border-right-color: #fff
 }
-.fa.fa-close{ color: #568701; font-size: 26px; line-height: 30px; }
+.fa.fa-close{ color: #fca91c; font-size: 26px; line-height: 30px; }
 .bsnav {
 background: transparent;
     padding-top: 0;
@@ -175,7 +175,7 @@ background: transparent;
 @media (max-width:992px){
     .bsnav { padding: 10px 0px;}
     .nav-link.link_hd:after{     position: absolute;
-        content: '\f105';
+        
         font-family: 'FontAwesome';
         right: 0px;
         color: #888888;

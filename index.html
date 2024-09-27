@@ -103,12 +103,12 @@
                    <!-- First Submenu: Services for Talent (With Right Arrow) -->
                    <li class="dropdown-submenu">
                      <a class="dropdown-item" href="services-for-talent.html">Service for Talents</a>
-                     <!-- <ul class="dropdown-menu">
+                     <ul class="dropdown-menu">
                        <li><a class="dropdown-item" href="Ausbildung.html">Ausbildung</a></li>
                        <li><a class="dropdown-item" href="jobs-in-jermany.html">Jobs in Germany</a></li>
                        <li><a class="dropdown-item" href="fedral.html">Federal Voluntary Services</a></li>
-                       <li><a class="dropdown-item" href="united.html">United Hire Membership</a></li>
-                     </ul> -->
+                       <li><a class="dropdown-item" href="united.html">Membership at United Hire</a></li>
+                     </ul>
                    </li>
        
                    <!-- Second Submenu: Services for Employers (Without Right Arrow) -->
@@ -123,13 +123,14 @@
                </li>
                <li class="nav-item">
                  <a class="nav-link link_hd" href="contact.html">Contact Us</a>
+
                </li>
              </ul>
        
              <!-- Centered Logo -->
              <a class="navbar-brand mx-auto d-flex align-items-center" href="index.html">
                <img src="assets/image/logo-new.png" class="img-fluid" style="width:90px;" alt="Logo">
-               <span class="ml-2" style="font-size: 30px; font-weight: bold; color: #000;">UNITED HIRE</span>
+               <span class="ml-2" style="font-size: 30px; font-weight: bold; color: #4e3f79;">UNITED HIRE</span>
              </a>
        
              <!-- Language Switcher -->
@@ -149,68 +150,48 @@
        </div>
        
 
-       <div class="navbar navbar-expand-lg bsnav bsnav-sticky bsnav-sticky-slide  d-block d-md-none">
+       <div class="navbar navbar-expand-lg bsnav bsnav-sticky bsnav-sticky-slide d-block d-md-none py-4">
          <div class="container">
             <a class="navbar-brand mx-auto d-flex align-items-center" href="index.html">
-               <img src="assets/image/logo-new.png" class="img-fluid" style="width:25px;" alt="Logo">
-               <span class="ml-2" style="font-size: 20px; font-weight: bold; color: #000;">UNITED HIRE</span>
-             </a>            <button class="navbar-toggler toggler-spring"><span class="navbar-toggler-icon"></span></button>
+               <img src="assets/image/logo-new.png" class="img-fluid" style="width:50px;" alt="Logo">
+               <span class="ml-2" style="font-size: 20px; font-weight: bold; color: #4e3f79;">UNITED HIRE</span>
+            </a>
+            <button class="navbar-toggler toggler-spring"><span class="navbar-toggler-icon"></span></button>
+      
             <div class="collapse navbar-collapse">
                <ul class="navbar-nav navbar-mobile ml-auto mr-auto">
-                     <li class="nav-item  activee">
-                           <a class="nav-link link_hd" href="index.html">  Home  </a>
-                          
-                        </li>
-                  
-                        <li class="nav-item dropdown">
-                           <a class="nav-link dropdown-toggle" href="services.html" id="servicesDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                               Services
-                           </a>
-                           <ul class="navbar-nav submenu">                             <!-- Department grid 3 column with 4 submenus -->
-                               <li class="dropdown-submenu">
-                                   <a class="dropdown-item" href="services-for-talent.html">Service for Talents </a>
-                                   <ul class="navbar-nav submenu">                                 <li><a class="dropdown-item" href="Ausbildung.html">Ausbildung </a></li>
-                                       <li><a class="dropdown-item" href="jobs-in-jermany.html">Jobs in Germany </a></li>
-                                       <li><a class="dropdown-item" href="fedral.html">Federal Voluntary Services </a></li>
-                                       <li><a class="dropdown-item" href="united.html">United Hire Membership</a></li>
-                                   </ul>
-  
-                                   
-                               </li>
-                               <!-- Department grid 4 column with 2 submenus -->
-                               <li class="dropdown-submenu">
-                                   <a class="dropdown-item" href="services-for-employers.html">Service for Employers</a>
-                               </li>
-                           </ul>
-                       </li>
-                     
-                      
-                  <li class="nav-item ">
-                     <a class="nav-link link_hd" href="why-germany.html"> Why Germany  </a>
-                    
+                  <li class="nav-item activee">
+                     <a class="nav-link link_hd" href="index.html">Home</a>
                   </li>
-
-                  <li class="nav-item ">
-                   <a class="nav-link link_hd" href="contact.html">  Contact Us  </a>
-                  
-                </li>
-                  <li class="nav-item ">
-                  
-                        <ul class="navbar-nav submenu">
-                           <!-- <li class="nav-item"><a class="nav-link" href="blog-grid.html">Blog grid</a></li>
-                           <li class="nav-item"><a class="nav-link" href="blog-with-sidebar.html">Blog with sidebar</a></li>
-                           <li class="nav-item"><a class="nav-link" href="blog-single-post.html">Single post</a></li> -->
-                        </ul>
-                     </li>
-                   
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="services.html" id="servicesDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        Services
+                     </a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link link_hd" href="why-germany.html">Why Germany</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link link_hd" href="contact.html">Contact Us</a>
+                  </li>
                </ul>
-             
-                           </li> 
+      
+               <!-- Move language dropdown outside the navbar-nav for alignment to the right -->
+               <ul class="navbar-nav ml-auto">
+                  <li class="nav-item dropdown ml-auto">
+                     <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        EN
+                        <i class="fa fa-chevron-down"></i>
+                     </a>
+                     <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="languageDropdown">
+                        <li><a class="dropdown-item" href="#">GE</a></li>
+                     </ul>
+                  </li>
                </ul>
-              
             </div>
          </div>
       </div>
+      
          <!------main-content------>
          <main class="main-content">
           
@@ -272,11 +253,11 @@
             <div class="why_choose_us_details">
                <span class="flaticon-medal-1 choose_icon"></span>
                <a href="services-for-talent.html">
-                   <h2>Services For Talent</h2>
+                   <h2 class="text-blue">Services For Talent</h2>
                  </a>
                  
-               <p>Highly qualified international professionals for holistic employment in medical institutions in Germany.</p>
-               <a href="services-for-talent.html">READ MORE</a> 
+               <p class="text-blue">Highly qualified international professionals for holistic employment in medical institutions in Germany.</p>
+               <a href="services-for-talent.html  " class="text-blue">READ MORE</a> 
             </div>
          </div>
         
@@ -284,11 +265,11 @@
                   <div class="why_choose_us_details">
                      <span class="flaticon-doctor-2 choose_icon"></span>
                      <a href="services-for-employers.html">
-                       <h2>Services For Employers</h2>
+                       <h2 class="text-blue">Services For Employers</h2>
                      </a>
                      
-                     <p>Education and training of international and national Talents for the healthcare and social services sector in Germany.</p>
-                     <a href="services-for-employers.html">READ MORE</a> 
+                     <p class="text-blue">Education and training of international and national Talents for the healthcare and social services sector in Germany.</p>
+                     <a href="services-for-employers.html"  class="text-blue">READ MORE</a> 
                   </div>
                </div>
       </div>
@@ -306,7 +287,7 @@
 <section class="welcm_sec hme-two" style="background-color: #4d3e79;">
    <div class="container-fluid pd-0">
       <div class="row">
-         <div class="col-lg-6 pd-0" style="margin-top: 100px;">
+         <div class="col-lg-6 pd-0" style="margin-top: 70px;">
             <div class="welcm_sec_content lft">
                <div class="video-holder">
                   <div class="icon">
@@ -323,8 +304,8 @@
             <div class="welcm_sec_content rgt">
                <h2>Welcome To United Hire!</h2>
                <p>United Hire has an extensive track record in advising and supporting foreign skilled workers as well as excellent expert knowledge about integration processes and the role of language, education, and perspectives in the integration of foreign skilled workers into the German labor market.</p>
-               <p>Together we try to do justice to this socio-politically important field and guarantee the highest quality in our service offers.</p>
-               <p>We specialize in executive services in placements, training courses (Ausbildung), study courses, and visa processing, particularly in the healthcare sector. We offer in-house space for training and courses to ensure comprehensive preparation for our candidates.</p>
+               <p>Together we try to do justice to this socio-politically important field and guarantee the highest quality in our service offers.
+               We specialize in executive services in placements, training courses (Ausbildung), study courses, and visa processing, particularly in the healthcare sector. We offer in-house space for training and courses to ensure comprehensive preparation for our candidates.</p>
                <p>United Hire was founded to bridge the gap between healthcare professionals aspiring to study, work, and health organizations as a perfect match, and to integrate them into the German labor market. Our objective is to counter the large shortage of skilled nursing staff in Germany and at the same time open up new career prospects for healthcare professionals.</p>
                <p>With us, employers and medical staff get everything from a single source. This means that we organize and carry out everything from the first interview with the medical staff and the employer up to the beginning of the employment relationship – including language training, the recognition of qualifications, different aspects of residence law, entry into Germany, the search for accommodation, qualification, and placement.</p>
             </div>
@@ -343,8 +324,8 @@
       <div class="row">
          <div class="col-lg-8">
             <div class="heading">
-               <h1 style="color: #fca91c;">Why Choose Us</h1>
-               <p>Our aim is to cover the long-term demand for skilled nursing staff in Germany. Nursing staff, students, employers, and those in need of care shall be provided with optimal service.</p>
+               <h1 class="text-orange">Why Choose Us</h1>
+               <p class="text-blue">Our aim is to cover the long-term demand for skilled nursing staff in Germany. Nursing staff, students, employers, and those in need of care shall be provided with optimal service.</p>
             </div>
          </div>
       </div>
@@ -353,8 +334,8 @@
             <div class="welcome-content">
                <span class="icon flaticon-automation"></span>
                <div class="content-inner">
-                  <h2>Trust and Fairness</h2>
-                  <p>Dealing with all involved parties on the basis of trust and fairness is essential to our approach. We focus on long-term solutions for staffing needs.</p>
+                  <h2 class="text-blue">Trust and Fairness</h2>
+                  <p class="text-blue">Dealing with all involved parties on the basis of trust and fairness is essential to our approach. We focus on long-term solutions for staffing needs.</p>
                </div>
             </div>
          </div>
@@ -362,8 +343,8 @@
             <div class="welcome-content">
                <span class="icon flaticon-medal"></span>
                <div class="content-inner">
-                  <h2>Transparency</h2>
-                  <p>The procedure is clearly presented to nursing staff and students from the beginning, ensuring clarity on the process duration and content at every stage.</p>
+                  <h2 class="text-blue">Transparency</h2>
+                  <p class="text-blue">The procedure is clearly presented to nursing staff and students from the beginning, ensuring clarity on the process duration and content at every stage.</p>
                </div>
             </div>
          </div>
@@ -371,8 +352,8 @@
             <div class="welcome-content">
                <span class="icon flaticon-doctor-1"></span>
                <div class="content-inner">
-                  <h2>Unbureaucratic</h2>
-                  <p>We handle everything – from German courses to visa processing, entry into Germany, and finding accommodation, making the process easy for all involved.</p>
+                  <h2 class="text-blue">Unbureaucratic</h2>
+                  <p class="text-blue">We handle everything – from German courses to visa processing, entry into Germany, and finding accommodation, making the process easy for all involved.</p>
                </div>
             </div>
          </div>
@@ -380,8 +361,8 @@
             <div class="welcome-content">
                <span class="icon flaticon-doctor-1"></span>
                <div class="content-inner">
-                  <h2>Responsible</h2>
-                  <p>We take full responsibility towards all parties involved, ensuring reliable and transparent interactions in our consulting and placement process.</p>
+                  <h2 class="text-blue">Responsible</h2>
+                  <p class="text-blue">We take full responsibility towards all parties involved, ensuring reliable and transparent interactions in our consulting and placement process.</p>
                </div>
             </div>
          </div>
@@ -389,8 +370,8 @@
             <div class="welcome-content">
                <span class="icon flaticon-doctor-1"></span>
                <div class="content-inner">
-                  <h2>Sustainability</h2>
-                  <p>With our concept, we ensure a high-quality, end-to-end qualification process, delivering the best possible results for all parties.</p>
+                  <h2 class="text-blue">Sustainability</h2>
+                  <p class="text-blue">With our concept, we ensure a high-quality, end-to-end qualification process, delivering the best possible results for all parties.</p>
                </div>
             </div>
          </div>
@@ -548,25 +529,28 @@
          <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                <div class="footer-widget first">
-                   <h2>ABOUT US</h2>
-                   <div class="footer-text">
-                       <!-- Germany Address -->
-                       <p><span class="fa fa-map-marker"></span>United Hire - Germany, Ludwig Straße 17, 65479 Raunheim, Deutschland</p>
-                       <p><span class="fa fa-phone"></span><a href="#"> 06142 - 2106636</a></p>
-                       <p><span class="fa fa-envelope"></span><a href="mailto:info@unitedhire.de">E-Mail: info@unitedhire.de</a></p>
-                       
-                       <!-- India Address -->
-                       <p><span class="fa fa-map-marker"></span>United Hire - India, 511, Paras Trinity, Sector 63, Gurugram, Haryana, India</p>
-                       <p><span class="fa fa-phone"></span><a href="#"> +91 7406672444</a></p>
-                       <p><span class="fa fa-envelope"></span><a href="mailto:info@unitedhire.de">E-Mail: info@unitedhire.de</a></p>
-                       
-                       <ul class="social-media">
-                           <li><a href="https://www.facebook.com/profile.php?id=61565387860467" target="_blank"><i class="fa fa-facebook-f"></i></a></li>
-                           <li><a href="https://www.instagram.com/unitedhire/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                           <li><a href="https://www.linkedin.com/in/united-hire-" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                       </ul>
-                   </div>
-               </div>
+                  <h2>ADDRESS</h2>
+                  <div class="footer-text">
+                      <!-- Germany Address -->
+                      <h5 class="text-white">GERMANY</h5> <!-- Add this heading for Germany -->
+                      <p><span class="fa fa-map-marker"></span>United Hire - Germany, Ludwig Straße 17, 65479 Raunheim, Deutschland</p>
+                      <p><span class="fa fa-phone"></span><a href="#">06142 - 2106636</a></p>
+                      <p class="mb-3"><span class="fa fa-envelope"></span><a href="mailto:info@unitedhire.de">E-Mail: info@unitedhire.de</a></p>
+                      
+                      <!-- India Address -->
+                      <h5 class="text-white">INDIA</h5> <!-- Add this heading for India -->
+                      <p><span class="fa fa-map-marker"></span>United Hire - India, 511, Paras Trinity, Sector 63, Gurugram, Haryana, India</p>
+                      <p><span class="fa fa-phone"></span><a href="#">+91 7406672444</a></p>
+                      
+              
+                      <ul class="social-media">
+                          <li><a href="https://www.facebook.com/profile.php?id=61565387860467" target="_blank"><i class="fa fa-facebook-f"></i></a></li>
+                          <li><a href="https://www.instagram.com/unitedhire/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                          <li><a href="https://www.linkedin.com/in/united-hire-" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                      </ul>
+                  </div>
+              </div>
+              
            </div>
            
             
@@ -635,7 +619,8 @@
          <div class="row clearfix">
             <div class="col-lg-12">
                <div class="left">
-                  <p>© 2024 <spanUnited Hire</span> All rights reserved. Developed by Sygmetiv Business Solutions</p>
+                  <p>© 2024 <span>United Hire</span> All rights reserved. Developed by <a href="https://sygmetiv.com/" target="_blank">Sygmetiv Business Solutions</a></p>
+
                </div>
                <div class="right">
                   <ul>

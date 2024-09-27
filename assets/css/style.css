@@ -54,7 +54,28 @@ font-family: 'Nunito Sans', sans-serif;
 @import url('flexslider.css');
 
 /*-----------------scroolbar-------------*/
+.text-blue {
+    color: #4e3f79 !important;
+}
 
+.bg-blue {
+    background-color: #4e3f79 !important;
+}
+.text-orange {
+    color: #f05322 !important;
+}
+
+.bg-orange {
+    background-color: #f05322 !important;
+}
+.text-yellow {
+    color: #fca91c !important;
+}
+
+.bg-yellow
+ {
+    background-color: #fca91c !important;
+}
 
 /*** 
 
