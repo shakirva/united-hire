@@ -77,7 +77,43 @@
 .navbar-brand {
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%);}
+
+
+  /* Ensure all the boxes are the same height */
+.best-doctor-outer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Ensures full height */
+    border: 1px solid #ddd; /* Optional: Just for visual */
+    padding: 20px;
+}
+
+/* Set equal height for all columns */
+.col-lg-4 {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Force all images to have the same size */
+.best-doctor-outer .image img {
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Set a min-height so boxes are the same even with little content */
+.best-doctor-outer .content-inner {
+    flex-grow: 1; /* This ensures that the content fills up the available space */
+    min-height: 200px; /* Adjust based on your layout */
+}
+
+/* Optional: Adjust h2 font size and spacing to maintain uniformity */
+.best-doctor-outer h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
 }
 
 
@@ -233,7 +269,7 @@
       <!-- Image and Content Section -->
       <div class="row">
          <div class="col-md-6 mt-5">
-            <img src="assets/image/foremployers.png" alt="Image description" class="img-fluid">
+            <img src="assets/image/employers.jpg" alt="Image description" class="img-fluid">
          </div>
          <div class="col-md-6">
             <p class="p-5 mt-4 text-blue" style="text-align: justify;">
@@ -248,107 +284,97 @@
    
     
    
-     <section class="best-doctors pages">
+   <section class="best-doctors pages">
       <div class="container">
-         <div class="row">
-            <div class="col-lg-12">
-               <div  class="heading">
-                  <h1 class="text-orange">Steps of the recruitment process</h1>
-               </div>
-            </div>
-         </div>
-         <div class="row">
-            <div class="row">
-               <div class="col-lg-4">
-                   <div class="best-doctor-outer">
-                       <div class="image">
-                           <img src="assets/image/1.jpg" class="img-fluid" alt="best-doctors"/>
-                           <a href="#" class="link"></a>
-                       </div>
-                       <div class="content-inner">
-                           <h2 class="text-blue ">Consulting and Candidate Search</h2>
-                           <p >In a consultation, you will be informed about the entire process that is necessary to be able to hire a Filipino skilled worker. Your individual needs will be addressed and the matching process for finding a suitable candidate will be initiated.</p>
-                       </div>
-                   </div>
-               </div>
-           
-               <div class="col-lg-4">
-                   <div class="best-doctor-outer">
-                       <div class="image">
-                           <img src="assets/image/2.jpg" class="img-fluid" alt="best-doctors"/>
-                           <a href="#" class="link"></a>
-                       </div>
-                       <div class="content-inner">
-                           <h2 class="text-blue ">Assessment Test and Language Courses</h2>
-                           <p >For the selection of our candidates, interviews are conducted in which the professional and personal suitability is clarified. In addition, we conduct an assessment test to determine motivation and suitability.</p>
-                       </div>
-                   </div>
-               </div>
-           
-               <div class="col-lg-4">
-                   <div class="best-doctor-outer">
-                       <div class="image">
-                           <img src="assets/image/3.jpg" class="img-fluid" alt="best-doctors"/>
-                           <a href="#" class="link"></a>
-                       </div>
-                       <div class="content-inner">
-                           <h2 class="text-blue">Video Calls / Monitoring / Development Status</h2>
-                           <p>You can view the application documents of the healthcare professional and get to know her or him in an interview via video call.</p>
-                       </div>
-                   </div>
-               </div>
-           
-               <div class="col-lg-4">
-                   <div class="best-doctor-outer">
-                       <div class="image">
-                           <img src="assets/image/4.jpg" class="img-fluid" alt="best-doctors"/>
-                           <a href="#" class="link"></a>
-                       </div>
-                       <div class="content-inner">
-                           <h2 class="text-blue ">Entry & Visa</h2>
-                           <p >All measures necessary to enable the health professional to enter and access the German labor market are undertaken.</p>
-                       </div>
-                   </div>
-               </div>
-           
-               <div class="col-lg-4">
-                   <div class="best-doctor-outer">
-                       <div class="image">
-                           <img src="assets/image/5.jpg" class="img-fluid" alt="best-doctors"/>
-                           <a href="#" class="link"></a>
-                       </div>
-                       <div class="content-inner">
-                           <h2 class="text-blue ">Recognition</h2>
-                           <p >The preparation for the knowledge test already begins in the homeland and the nurses are prepared for their work in Germany in our training center.</p>
-                       </div>
-                   </div>
-               </div>
-           
-               <div class="col-lg-4">
-                   <div class="best-doctor-outer">
-                       <div class="image">
-                           <img src="assets/image/6.jpg" class="img-fluid" alt="best-doctors"/>
-                           <a href="#" class="link"></a>
-                       </div>
-                       <div class="content-inner">
-                           <h2 class="text-blue ">Commencement of Employment</h2>
-                           <p >The start of the activity can take place upon consultation directly after the entry or after conclusion of the knowledge examination.</p>
-                       </div>
-                   </div>
-               </div>
-           </div>
-           
-               
-               
-               <div class="col-lg-12">
-               <div class="view-more-doctors text-center">
-               
-               </div>
+          <div class="row">
+              <div class="col-lg-12">
+                  <div class="heading">
+                      <h1 class="text-orange">Steps of the recruitment process</h1>
+                  </div>
               </div>
-            </div>
-         </div>
-     
-   </section>
+          </div>
+          <div class="row">
+              <div class="col-lg-4">
+                  <div class="best-doctor-outer">
+                      <div class="image">
+                          <img src="assets/image/1.jpg" class="img-fluid" alt="best-doctors" />
+                          <a href="#" class="link"></a>
+                      </div>
+                      <div class="content-inner">
+                          <h2 class="text-blue">Consulting and Candidate Search</h2>
+                          <p>In a consultation, you will be informed about the entire process that is necessary to be able to hire a Filipino skilled worker. Your individual needs will be addressed and the matching process for finding a suitable candidate will be initiated.</p>
+                      </div>
+                  </div>
+              </div>
+  
+              <div class="col-lg-4">
+                  <div class="best-doctor-outer">
+                      <div class="image">
+                          <img src="assets/image/2.jpg" class="img-fluid" alt="best-doctors" />
+                          <a href="#" class="link"></a>
+                      </div>
+                      <div class="content-inner">
+                          <h2 class="text-blue">Assessment Test and Language Courses</h2>
+                          <p>For the selection of our candidates, interviews are conducted in which the professional and personal suitability is clarified. In addition, we conduct an assessment test to determine motivation and suitability.</p>
+                      </div>
+                  </div>
+              </div>
+  
+              <div class="col-lg-4">
+                  <div class="best-doctor-outer">
+                      <div class="image">
+                          <img src="assets/image/3.jpg" class="img-fluid" alt="best-doctors" />
+                          <a href="#" class="link"></a>
+                      </div>
+                      <div class="content-inner">
+                          <h2 class="text-blue">Video Calls / Monitoring / Development Status</h2>
+                          <p>You can view the application documents of the healthcare professional and get to know her or him in an interview via video call.</p>
+                      </div>
+                  </div>
+              </div>
+  
+              <div class="col-lg-4">
+                  <div class="best-doctor-outer">
+                      <div class="image">
+                          <img src="assets/image/4.jpg" class="img-fluid" alt="best-doctors" />
+                          <a href="#" class="link"></a>
+                      </div>
+                      <div class="content-inner">
+                          <h2 class="text-blue">Entry & Visa</h2>
+                          <p>All measures necessary to enable the health professional to enter and access the German labor market are undertaken.</p>
+                      </div>
+                  </div>
+              </div>
+  
+              <div class="col-lg-4">
+                  <div class="best-doctor-outer">
+                      <div class="image">
+                          <img src="assets/image/5.jpg" class="img-fluid" alt="best-doctors" />
+                          <a href="#" class="link"></a>
+                      </div>
+                      <div class="content-inner">
+                          <h2 class="text-blue">Recognition</h2>
+                          <p>The preparation for the knowledge test already begins in the homeland and the nurses are prepared for their work in Germany in our training center.</p>
+                      </div>
+                  </div>
+              </div>
+  
+              <div class="col-lg-4">
+                  <div class="best-doctor-outer">
+                      <div class="image">
+                          <img src="assets/image/6.jpg" class="img-fluid" alt="best-doctors" />
+                          <a href="#" class="link"></a>
+                      </div>
+                      <div class="content-inner">
+                          <h2 class="text-blue">Commencement of Employment</h2>
+                          <p>The start of the activity can take place upon consultation directly after the entry or after conclusion of the knowledge examination.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  
    
    <section class="testimonial_sec type_two">
       <div class="container">
@@ -395,7 +421,7 @@
                      <div class="client_details">
                            <img src="assets/image/ebana.jpg" class="img-fluid" alt="test" />
                         <div class="client_in">
-                           <h6>APM-Asha</h6>
+                           <h6>APG-Dana</h6>
                            <span>Client</span>
                         </div>
                      </div>
